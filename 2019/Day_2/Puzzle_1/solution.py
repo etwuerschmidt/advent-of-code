@@ -23,7 +23,7 @@ def parse_op_codes(filename, test=True):
         elif ops[position] == 2:
             ops[output] = ops[input_1] * ops[input_2]
 
-def test_parse_op_code():
+def test_parse_op_codes():
     assert parse_op_codes('test_input_1.txt') == [3500,9,10,70,2,3,11,0,99,30,40,50]
     assert parse_op_codes('test_input_2.txt') == [2,0,0,0,99]
     assert parse_op_codes('test_input_3.txt') == [30,1,1,4,2,5,6,0,99]
