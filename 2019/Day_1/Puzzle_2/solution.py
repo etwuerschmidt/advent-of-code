@@ -1,6 +1,7 @@
 import math
 import pytest
 
+
 def compute_fuel(filename):
     modules = []
     with open(filename, 'r') as f:
@@ -16,8 +17,10 @@ def compute_fuel(filename):
         total += module_total
     return total
 
+
 def test_compute_fuel():
     assert compute_fuel('test_input.txt') == 2 + 2 + 966 + 50346
+
 
 if __name__ == "__main__":
     print(compute_fuel('puzzle_input.txt'))
