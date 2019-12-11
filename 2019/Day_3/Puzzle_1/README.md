@@ -4,7 +4,7 @@ The wires twist and turn, but the two wires occasionally cross paths. To fix the
 
 For example, if the first wire's path is R8,U5,L5,D3, then starting from the central port (o), it goes right 8, up 5, left 5, and finally down 3:
 
-<code>...........
+<pre><code>...........
 ...........
 ...........
 ....+----+.
@@ -14,10 +14,11 @@ For example, if the first wire's path is R8,U5,L5,D3, then starting from the cen
 .........|.
 .o-------+.
 ...........
-</code>
+</code></pre>
+</br>
 Then, if the second wire's path is U7,R6,D4,L4, it goes up 7, right 6, down 4, and left 4:
 
-<code>...........
+<pre><code>...........
 .+-----+...
 .|.....|...
 .|..+--X-+.
@@ -27,8 +28,8 @@ Then, if the second wire's path is U7,R6,D4,L4, it goes up 7, right 6, down 4, a
 .|.......|.
 .o-------+.
 ...........
-</code>
-...........</br>
+</code></pre>
+</br>
 These wires cross at two locations (marked X), but the lower-left one is closer to the central port: its distance is 3 + 3 = 6.
 
 Here are a few more examples:
