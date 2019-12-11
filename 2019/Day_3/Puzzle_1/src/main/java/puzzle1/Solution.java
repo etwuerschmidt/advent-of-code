@@ -30,6 +30,7 @@ class Solution {
             currentPoint.setLocation(currentPoint.getX()+horMapping.getOrDefault(direction, 0), currentPoint.getY()+vertMapping.getOrDefault(direction, 0));
             Point wirePosition = new Point(currentPoint);
             if (!points.add(wirePosition) && wireNumber == numWires) {
+                System.out.println("Intersection found at point: " + wirePosition.toString());
                 int currManDist = (int) Math.abs(currentPoint.getX()) + (int) Math.abs(currentPoint.getY());
                 if (currManDist < minManDistance  && currManDist != 0) { 
                     minManDistance = currManDist;
