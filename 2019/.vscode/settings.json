@@ -1,0 +1,7 @@
+{
+    "files.exclude": {
+        "**/.factorypath": true,
+        "**/.project": true,
+        "**/.settings": true
+    }
+}

@@ -1,10 +1,5 @@
 # Directories
 **__pycache__
-**lib
-**bin
 
 # Files
 .pytest_cache
-.vscode
-.project
-org.eclipse.jdt.core.prefs

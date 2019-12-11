@@ -1,0 +1,49 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Solution<Puzzle_1>",
+            "request": "launch",
+            "mainClass": "Solution",
+            "projectName": "Puzzle_1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-App<Puzzle_2>",
+            "request": "launch",
+            "mainClass": "app.App",
+            "projectName": "Puzzle_2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Version<Puzzle_2>",
+            "request": "launch",
+            "mainClass": "junit.runner.Version",
+            "projectName": "Puzzle_2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TestRunner<Puzzle_2>",
+            "request": "launch",
+            "mainClass": "junit.textui.TestRunner",
+            "projectName": "Puzzle_2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-JUnitCore<Puzzle_2>",
+            "request": "launch",
+            "mainClass": "org.junit.runner.JUnitCore",
+            "projectName": "Puzzle_2"
+        }
+    ]
+}
