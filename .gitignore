@@ -1,8 +1,10 @@
 # Directories
 **__pycache__
 **lib
+**bin
+**.settings
 
 # Files
 .pytest_cache
 .vscode
-.class
+.project

@@ -1,5 +1,6 @@
-import static org.junit.Assert.assertEquals;
+package puzzle1;
 
+import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class Tests {
@@ -13,5 +14,11 @@ public class Tests {
     public void test2CalcManhattanDistance() {
         Solution mySolution = new Solution();
         assertEquals(135, mySolution.calcManhattanDistance("test_input_2.txt"));
+    }
+
+    @Test
+    public void test3CalcManhattanDistance() {
+        Solution mySolution = new Solution();
+        assertEquals(6, mySolution.calcManhattanDistance("test_input_3.txt"));
     }
 }
