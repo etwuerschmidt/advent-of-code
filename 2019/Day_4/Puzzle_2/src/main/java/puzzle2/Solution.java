@@ -1,6 +1,7 @@
 package puzzle2;
 
-import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 class Solution {
     public static void main(String[] args) {
@@ -18,31 +19,26 @@ class Solution {
         boolean doubleFound = false;
         boolean decreasingDigits = true;
         int passwordCheck = password;
-        ArrayList<Integer> matchingDigits = new ArrayList<Integer>();
         int prevDigit = passwordCheck % 10;
-        matchingDigits.add(prevDigit);
         passwordCheck /= 10;
+        Map<Integer, Integer> digitFreq = new HashMap<Integer, Integer>();
+        digitFreq.put(prevDigit, 1);
         while (passwordCheck > 0) {
             int currDigit = passwordCheck % 10;
-            if (prevDigit == currDigit) {
-                matchingDigits.add(currDigit);
-                if (matchingDigits.size() > 2) {
-                    doubleFound = false;
-                }
-                else {
-                    doubleFound = true;
-                }
-            }
-            else {
-                matchingDigits.clear();
-            }
-            
+            digitFreq.put(currDigit, digitFreq.getOrDefault(currDigit, 0)+1);
             if (prevDigit < currDigit) {
                 decreasingDigits = false;
             }
-
+            
             prevDigit = currDigit;
             passwordCheck /= 10;
+        }
+
+        for (Integer frequency : digitFreq.values()) {
+            if (frequency == 2) {
+                doubleFound = true;
+                break;
+            }
         }
         return doubleFound && decreasingDigits;
     }

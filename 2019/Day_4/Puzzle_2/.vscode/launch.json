@@ -12,31 +12,31 @@
         },
         {
             "type": "java",
-            "name": "Debug (Launch)-Version<Puzzle_1>",
+            "name": "Debug (Launch)-Version<Puzzle_2_Copy>",
             "request": "launch",
             "mainClass": "junit.runner.Version",
-            "projectName": "Puzzle_1"
+            "projectName": "Puzzle_2_Copy"
         },
         {
             "type": "java",
-            "name": "Debug (Launch)-TestRunner<Puzzle_1>",
+            "name": "Debug (Launch)-TestRunner<Puzzle_2_Copy>",
             "request": "launch",
             "mainClass": "junit.textui.TestRunner",
-            "projectName": "Puzzle_1"
+            "projectName": "Puzzle_2_Copy"
         },
         {
             "type": "java",
-            "name": "Debug (Launch)-JUnitCore<Puzzle_1>",
+            "name": "Debug (Launch)-JUnitCore<Puzzle_2_Copy>",
             "request": "launch",
             "mainClass": "org.junit.runner.JUnitCore",
-            "projectName": "Puzzle_1"
+            "projectName": "Puzzle_2_Copy"
         },
         {
             "type": "java",
-            "name": "Debug (Launch)-Solution<Puzzle_1>",
+            "name": "Debug (Launch)-Solution<Puzzle_2_Copy>",
             "request": "launch",
-            "mainClass": "puzzle1.Solution",
-            "projectName": "Puzzle_1"
+            "mainClass": "puzzle2.Solution",
+            "projectName": "Puzzle_2_Copy"
         }
     ]
 }
